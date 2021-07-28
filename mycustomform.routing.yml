@@ -1,0 +1,16 @@
+mycustomform.custom_form:
+  path: '/myform'
+  defaults:
+    _form: 'Drupal\mycustomform\Form\CustomForm'
+    _title: 'Simple custom form example'
+  requirements:
+    _permission: 'access content' 
+
+mycustomform.get_result:
+    path: '/get_result'
+    _title: 'This is Shwoing From Json data'
+    defaults:
+        _controller: 'Drupal\mycustomform\Controller\ShowJsonController::get_result'
+    requirements:
+        _permission: 'access content'
+    
